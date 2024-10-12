@@ -1,0 +1,61 @@
+import React from "react";
+import Image from "next/image";
+import StartLearning from '../images/StartLearning.svg'
+import Vector from "../images/Vector.svg";
+import Learner1 from '../images/Learner1.svg'
+import Instructor from './Instructor'
+const Benefits = () => {
+  return (
+    <div className="">
+      <div className="pt-20 text-2xl font-bold text-center">Who Benefits from Learna</div>
+
+      {/* Learner */}
+<div className="w-auto">
+      <div className="my-8">
+        <div className="w-90 mx-4 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)] px-4">
+          <div className="font-normal pt-4 mb-4 text-5xl">Learner</div>
+          <div className="flex items-baseline gap-2">
+            <Image src={Vector} alt="vector" className="" />
+            <p>
+              Empowering the pursuing of learning goals to achieve potential
+            </p>
+          </div>
+
+          <div className="flex items-baseline  gap-2">
+            <Image src={Vector} alt="vector" />
+            <p>
+              Empowering the pursuing of learning goals to achieve potential
+            </p>
+          </div>
+
+          <div className="flex items-baseline  gap-2">
+            <Image src={Vector} alt="vector" />
+            <p>
+              Empowering the pursuing of learning goals to achieve potential
+            </p>
+          </div>
+        
+        <div className="mt-5">
+            <Image
+            src={StartLearning}
+            alt=""
+            />
+        </div>
+
+        <div className="pt-8 pb-4 flex items-center px-8">
+            <Image
+            src={Learner1}
+            alt=""
+
+            />
+        </div>
+        </div>
+        
+      </div>
+      <Instructor/>
+      </div>
+    </div>
+  );
+};
+
+export default Benefits;
