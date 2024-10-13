@@ -9,17 +9,18 @@ import Benefits from './Benefits'
 import Testimonials from './Testimonials'
 import Bottom from './Bottom'
 import Footer from './Footer'
-
+import Cources from './Courses'
 
 
 const Main = () => {
   return (
-    <div id='main' className='w-[393px] h-[7322.52px] mt-16 py-[8px] gap-20'>
+    <div id='main' className='w-full mt-16 py-[8px]'>
       <SectionOne/>
       <SectionTwo/>
       <SectionThree/>
       <Catogeries/>
       <Services/>
+      <Cources/>
       <Clubs/>
       <Benefits/>
       <Testimonials/>

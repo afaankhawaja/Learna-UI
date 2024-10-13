@@ -15,7 +15,7 @@ const SectionOne = () => {
       </div>
 
 
-      <div id="text" className="w-90 h-56">
+      <div id="text" className="w-screen h-56 p-2">
         <div className="gap-[32px] flex flex-col justify-center items-center">
 
         {/* text */}
@@ -42,52 +42,5 @@ const SectionOne = () => {
 
 export default SectionOne;
 
-/* Frame 1000004696 */
-
-/* Auto layout */
-// display: flex;
-// flex-direction: column;
-// align-items: center;
-// padding: 0px;
-// gap: 32px;
-
-// width: 361px;
-// height: 514.59px;
-
-
-// /* Inside auto layout */
-// flex: none;
-// order: 0;
-// flex-grow: 0;
-
-/* Group 1000003596 */
-
-// width: 298.23px;
-// height: 260.93px;
-
-
-// /* Inside auto layout */
-// flex: none;
-// order: 0;
-// flex-grow: 0;
-
-
-/* Frame 1000004248 */
-
-/* Auto layout */
-
-// display: flex;
-// flex-direction: column;
-// align-items: flex-start;
-// padding: 0px;
-
-// width: 361px;
-// height: 221.67px;
-
-
-// /* Inside auto layout */
-// flex: none;
-// order: 1;
-// flex-grow: 0;
 
 

@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        raleway: ['var(--font-raleway)', 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -17,4 +20,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

@@ -6,7 +6,7 @@ import Menu from '../images/Menu.svg'
 
 const Navbar = () => {
   return (
-    <div className="w-90 bg-[#FFFFFF] h-10 mt-8 flex justify-between items-center px-2">
+    <div className="w-90 bg-[#FFFFFF] h-10 mt-8 flex justify-between items-center px-4">
        <div>
         <Image 
         src={GroupLogo}

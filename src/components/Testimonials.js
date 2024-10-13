@@ -22,7 +22,7 @@ const Testimonials = () => {
 
         </div>
 
-        <div className="w-90 mx-4 my-2 p-5 mt-5 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)] px-4">
+        <div className="w-90 ml-4 mr-2 my-2 p-5 mt-5 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)] px-4">
         <Image
         src={Testimonial1}
         alt=""

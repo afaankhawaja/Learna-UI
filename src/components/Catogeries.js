@@ -13,13 +13,13 @@ import FinanceAccounting from "../images/FinanceAccounting.svg";
 
 const Catogeries = () => {
   return (
-    <div className="w-full mt-20 mx-4">
+    <div className="w-full mt-20 ml-2">
       <div id="title" className="flex flex-col justify-center items-center">
-        <div className="font-mono text-2xl mb-3">Categories</div>
+        <div className="font-raleway text-3xl mb-3">Categories</div>
         <Image src={Group2} alt="group" />
       </div>
 
-      <div id="catogeries-item" className="h-[665px] mt-8 flex flex-wrap justify-between ">
+      <div id="catogeries-item" className="mt-8 flex flex-wrap justify-between gap-2 pr-2">
         <div className="w-28 text-center">
           <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
             <Image
@@ -119,8 +119,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Development</p>
         </div>
 
-        <div className="w-full text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-full h-26 flex justify-center items-center">
+        <div className="w-screen text-center">
+          <div className="bg-[#F5F5F5] w-screen rounded-lg h-26 flex justify-center items-center">
             <Image
               src={FinanceAccounting}
               alt=""

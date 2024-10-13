@@ -6,31 +6,31 @@ import Learner1 from '../images/Learner1.svg'
 import Instructor from './Instructor'
 const Benefits = () => {
   return (
-    <div className="">
-      <div className="pt-20 text-2xl font-bold text-center">Who Benefits from Learna</div>
+    <div className="w-screen">
+      <div className="pt-20 text-[32px] font-raleway font-semibold text-center">Who Benefits from Learna</div>
 
       {/* Learner */}
-<div className="w-auto">
-      <div className="my-8">
-        <div className="w-90 mx-4 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)] px-4">
+<div className="w-screen">
+      <div className="my-8 ">
+        <div className="w-90 ml-4 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)] px-4">
           <div className="font-normal pt-4 mb-4 text-5xl">Learner</div>
-          <div className="flex items-baseline gap-2">
+          <div className="flex items-baseline gap-2 py-2">
             <Image src={Vector} alt="vector" className="" />
-            <p>
+            <p className="font-bold font-raleway ">
+              Empowering the pursuing of learning goals to achieve potential
+            </p>
+          </div>
+
+          <div className="flex items-baseline  gap-2 pb-2">
+            <Image src={Vector} alt="vector" />
+            <p className="font-bold font-raleway">
               Empowering the pursuing of learning goals to achieve potential
             </p>
           </div>
 
           <div className="flex items-baseline  gap-2">
             <Image src={Vector} alt="vector" />
-            <p>
-              Empowering the pursuing of learning goals to achieve potential
-            </p>
-          </div>
-
-          <div className="flex items-baseline  gap-2">
-            <Image src={Vector} alt="vector" />
-            <p>
+            <p className="font-bold font-raleway">
               Empowering the pursuing of learning goals to achieve potential
             </p>
           </div>
