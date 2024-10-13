@@ -19,7 +19,7 @@ const Catogeries = () => {
         <Image src={Group2} alt="group" />
       </div>
 
-      <div id="catogeries-item" className="mt-8 flex flex-wrap justify-between gap-2 pr-2">
+      <div id="catogeries-item" className="mt-8 flex flex-wrap justify-evenly gap-2 pr-2">
         <div className="w-28 text-center">
           <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
             <Image

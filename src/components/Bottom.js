@@ -8,7 +8,7 @@ import Woman from '../images/Woman.svg'
 
 const Bottom = () => {
   return (
-    <div className="mt-20 ml-4 mr-2 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)] ">
+    <div className="mt-20 ml-4 mr-2 px-1 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)] ">
       <div className="px-4 pt-8 flex flex-col items-center">
         <div className="text-3xl font-normal">Start Your Journey</div>
         <p className="mt-4 text-center">
