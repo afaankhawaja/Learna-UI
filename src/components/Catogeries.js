@@ -13,15 +13,15 @@ import FinanceAccounting from "../images/FinanceAccounting.svg";
 
 const Catogeries = () => {
   return (
-    <div className="w-full mt-20 ml-2">
+    <div className="w-full md:w-[80%] md:mx-auto mt-20 md:mt-40 ml-2">
       <div id="title" className="flex flex-col justify-center items-center">
-        <div className="font-raleway text-3xl mb-3">Categories</div>
+        <div className="font-raleway text-3xl md:text-5xl mb-3 ">Categories</div>
         <Image src={Group2} alt="group" />
       </div>
 
-      <div id="catogeries-item" className="mt-8 flex flex-wrap justify-evenly gap-2 pr-2">
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+      <div id="catogeries-item" className="mt-8 md:pt-8 flex flex-wrap justify-evenly gap-2 pr-2 md:pr-0 md:px-0 md:mx-0 md:space-x-1">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={PersonalDevelopment}
               alt=""
@@ -31,8 +31,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Personal Development</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={BusinessSoftSkill}
               alt=""
@@ -42,8 +42,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Business & Soft Skills</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={Languages}
               alt=""
@@ -53,8 +53,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Languages</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={Academics}
               alt=""
@@ -64,8 +64,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Academics</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={DesignCreativity}
               alt=""
@@ -75,8 +75,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Design & Creativity</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={Music}
               alt=""
@@ -86,8 +86,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Music</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={HealthFitness}
               alt=""
@@ -97,8 +97,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Health & Fitness</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={LifestyleHobbies}
               alt=""
@@ -108,8 +108,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Lifestyle & Hobbies</p>
         </div>
 
-        <div className="w-28 text-center">
-          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 flex justify-center items-center">
+        <div className="w-28 md:w-48 text-center">
+          <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image
               src={Development}
               alt=""
@@ -119,8 +119,8 @@ const Catogeries = () => {
           <p className="font-semibold text-sm mt-2">Development</p>
         </div>
 
-        <div className="w-screen text-center">
-          <div className="bg-[#F5F5F5] w-screen rounded-lg h-26 flex justify-center items-center">
+        <div className="w-28 md:w-48 flex-grow text-center">
+          <div className="bg-[#F5F5F5] rounded-lg h-28 md:w-48 md:h-48 flex grow justify-center items-center">
             <Image
               src={FinanceAccounting}
               alt=""

@@ -4,9 +4,9 @@ import Group from '../images/Group.svg'
 
 const SectionThree = () => {
   return (
-    <div className='mt-20 mx-4 h-[462px] w-90'>
+    <div className='mt-20 mx-4 h-[462px] w-90 md:w-[75%] md:mx-auto'>
     
-    <div className='flex justify-center font-mono text-3xl font-normal'>
+    <div className='flex justify-center font-mono text-3xl md:text-5xl font-normal'>
         Meet Learna
     </div>
     <div className='mt-4 text-center w-90'>

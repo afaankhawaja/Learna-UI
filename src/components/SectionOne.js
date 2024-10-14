@@ -7,40 +7,37 @@ import Text1 from "../images/text1.svg";
 
 const SectionOne = () => {
   return (
-    <div className="w-90 h-[514px] gap-8 pt-2">
-      <div className="flex justify-center">
-        <Image 
-        src={Section1} 
-        alt="svg" />
-      </div>
-
-
-      <div id="text" className="w-screen h-56 p-2">
-        <div className="gap-[32px] flex flex-col justify-center items-center">
-
-        {/* text */}
-<div className="gap-2 mt-6 mx-3 "> 
-            <Image src={Text1} alt="text" className="" />
-            </div>
-        {/* get started */}
-
-        <div className="w-full h-10 mt-8 flex items-center px-2 ">
-          <button id="getStarted" className="mr-7">
-
-            <Image src={getStarted} alt="get Started" />
-          </button>
-
-          <button id="explore" className="px-4 mb-2">
-            <Image src={ExploreCources} alt="explore" />
-          </button>
+    <div className="w-full md:max-w-6xl mx-auto md:mx-20 px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+      <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-8 lg:gap-24">
+        <div className="w-full lg:w-1/2 flex justify-center items-center">
+          <div className="w-full md:max-w-md lg:max-w-lg xl:max-w-xl">
+            <Image 
+              src={Section1} 
+              alt="svg"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
-      </div>
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mt-8 lg:mt-0">
+          <div className="w-full md: max-w-md lg:max-w-lg xl:max-w-xl">
+            <Image 
+              src={Text1} 
+              alt="text"
+              className="w-full h-auto mb-8 lg:mb-12"
+            />
+            <div className="flex justify-center lg:justify-start space-x-4 lg:space-x-6">
+              <button id="getStarted" className="transform hover:scale-105 transition-transform duration-200">
+                <Image src={getStarted} alt="get Started" className="w-auto h-12 lg:h-14" />
+              </button>
+              <button id="explore" className="transform hover:scale-105 transition-transform duration-200">
+                <Image src={ExploreCources} alt="explore" className="w-auto h-12 lg:h-14" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default SectionOne;
-
-
-
