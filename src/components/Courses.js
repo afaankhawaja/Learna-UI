@@ -2,7 +2,7 @@ import Image from "next/image"
 import Cources1 from '../images/Cources1.svg'
 const Cources = () => {
   return (
-    <div id='clubs' className='w-full md:pt-20 md:px-5 md:flex justify-between'>
+    <div id='clubs' className='w-full md:w-[85%] md:pt-20 md:mx-auto md:flex justify-between'>
         <div className='border-t-2 w-auto border-mercury my-8'>
         </div>
 

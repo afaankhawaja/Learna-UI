@@ -7,10 +7,10 @@ import Text1 from "../images/text1.svg";
 
 const SectionOne = () => {
   return (
-    <div className="w-full md:max-w-6xl mx-auto md:mx-20 px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
-      <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-8 lg:gap-24">
-        <div className="w-full lg:w-1/2 flex justify-center items-center">
-          <div className="w-full md:max-w-md lg:max-w-lg xl:max-w-xl">
+    <div className="w-full md:w-[85%] mx-auto md:mx-20 px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+      <div className="flex flex-col lg:flex-row-reverse md:justify-between gap-8 lg:gap-24">
+        <div className="w-full lg:w-2/5">
+          <div className="w-full">
             <Image 
               src={Section1} 
               alt="svg"
@@ -18,7 +18,7 @@ const SectionOne = () => {
             />
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start mt-8 lg:mt-0">
+        <div className="w-full lg:w-2/5 flex flex-col items-center lg:items-start mt-8 lg:mt-0">
           <div className="w-full md: max-w-md lg:max-w-lg xl:max-w-xl">
             <Image 
               src={Text1} 

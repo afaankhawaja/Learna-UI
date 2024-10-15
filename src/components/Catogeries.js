@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Group2 from "../images/Group2.svg";
 import PersonalDevelopment from "../images/PersonalDevelopment.svg";
@@ -13,13 +14,13 @@ import FinanceAccounting from "../images/FinanceAccounting.svg";
 
 const Catogeries = () => {
   return (
-    <div className="w-full md:w-[80%] md:mx-auto mt-20 md:mt-40 ml-2">
+    <div className="w-full md:w-[85%] md:mx-auto mt-20 md:mt-40 ml-2">
       <div id="title" className="flex flex-col justify-center items-center">
         <div className="font-raleway text-3xl md:text-5xl mb-3 ">Categories</div>
-        <Image src={Group2} alt="group" />
+        <Image src={Group2} alt="group" className="md:scale-150" />
       </div>
 
-      <div id="catogeries-item" className="mt-8 md:pt-8 flex flex-wrap justify-evenly gap-2 pr-2 md:pr-0 md:px-0 md:mx-0 md:space-x-1">
+      <div id="catogeries-item" className="mt-8 md:pt-8 flex flex-wrap justify-evenly md:justify-normal gap-2 md:gap-4 pr-2 md:pr-10 md:px-auto md:mx-auto">
         <div className="w-28 md:w-48 text-center">
           <div className="bg-[#F5F5F5] rounded-lg w-28 h-28 md:w-48 md:h-48 flex justify-center items-center">
             <Image

@@ -7,7 +7,7 @@ import Instructor from './Instructor'
 const Benefits = () => {
   return (
     <div className="w-screen">
-      <div className="pt-20 px-6 text-[32px] font-raleway md:font-semibold text-center">Who Benefits from Learna</div>
+      <div className="pt-20 px-6 text-[32px] font-raleway font-medium md:font-semibold text-center">Who Benefits from Learna?</div>
 
       {/* Learner */}
 <div className="w-screen">

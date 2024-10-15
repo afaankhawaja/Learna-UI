@@ -3,7 +3,7 @@ import GroupService from "../images/GroupServices.svg";
 import ServiceOne from "../images/Service_one.svg";
 const Services = () => {
   return (
-    <div id="services" className="w-full max-w-6xl mt-8 md:px-16 md:mt-32">
+    <div id="services" className="w-full md:w-[85%] max-w-6xl mt-8 md:mx-auto md:mt-32">
       <div id="title" className="flex flex-col justify-center items-center">
         <div className="font-raleway text-3xl md:text-5xl mb-3">Our Services</div>
         <Image src={GroupService} alt="group" className="md:max-w-md lg:max-w-xl" />
