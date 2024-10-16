@@ -4,6 +4,7 @@ import Section1 from "../images/section1.svg";
 import getStarted from "../images/getStarted.svg";
 import ExploreCources from "../images/ExploreCources.svg";
 import Text1 from "../images/text1.svg";
+import Help from '../images/Help.svg'
 
 const SectionOne = () => {
   return (
@@ -16,6 +17,13 @@ const SectionOne = () => {
               alt="svg"
               className="w-full h-auto"
             />
+            <span>
+            <Image 
+              src={Help} 
+              alt="svg"
+              className="ml-auto mt-4 shadow-md rounded-lg"
+            />
+            </span>
           </div>
         </div>
         <div className="w-full lg:w-2/5 flex flex-col items-center lg:items-start mt-8 lg:mt-0">
