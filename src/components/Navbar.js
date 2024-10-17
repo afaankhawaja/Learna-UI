@@ -9,6 +9,8 @@ import World from "../images/World.svg";
 import LearnaWeb from "../images/LearnaWeb.svg";
 import CategoriesDropdown from "./CategoriesDropdown";
 import MobileMenu from './MobileMenu'
+import { ImCross } from "react-icons/im";
+
 
 const Navbar = () => {
   const [isCategoriesVisible, setIsCategoriesVisible] = useState(false);
@@ -23,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile View */}
-      <div className="md:hidden w-90 bg-[#FFFFFF] h-11 mt-8 flex justify-between items-center px-4">
+      <div className="md:hidden  w-90 bg-[#FFFFFF] h-11 mt-8 flex justify-between items-center px-4">
         <div className="h-11">
           <Image src={GroupLogo} alt="icon" className="" />
         </div>
@@ -32,7 +34,8 @@ const Navbar = () => {
             <Image src={Login} alt="icon" className="" />
           </button>
           <button onClick={toggleMenu} id="menu" className="">
-            <Image src={Menu} alt="menu" className="" />
+            {isMenuVisible? <ImCross/>:<Image src={Menu} alt="menu" className="" />}
+            {/* <Image src={Menu} alt="menu" className="" /> */}
           </button>
         </div>
       </div>

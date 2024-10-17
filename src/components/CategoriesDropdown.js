@@ -18,7 +18,7 @@ const CategoriesDropdown = () => {
   };
   
   return (
-    <div className="w-full md:w-[85%] mx-auto bg-white shadow-lg mt-2 rounded-xl p-4 max-h-[380px] overflow-auto">
+    <div className="w-full absolute left-36 md:w-[75%] mx-auto bg-white shadow-lg transition-all shadow-slate-400 mt-1 rounded-xl p-4 max-h-[390px] overflow-auto">
       <div className="grid grid-cols-3 gap-4">
         {/* Category Column */}
         <div>
