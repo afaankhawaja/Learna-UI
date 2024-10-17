@@ -16,6 +16,7 @@ const CategoriesDropdown = () => {
   const handleSubcategoryClick = (subcategory) => {
     setActiveSubcategory(subcategory);
   };
+  
   return (
     <div className="w-full md:w-[85%] mx-auto bg-white shadow-lg mt-2 rounded-xl p-4 max-h-[380px] overflow-auto">
       <div className="grid grid-cols-3 gap-4">
@@ -36,6 +37,7 @@ const CategoriesDropdown = () => {
 
         {/* Subcategory Column */}
         <div>
+         
           {activeCategory &&
             activeCategory.subcatogery.map((subcategory, index) => (
               <div
