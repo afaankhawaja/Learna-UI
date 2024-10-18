@@ -26,7 +26,7 @@ const MobileMenu = () => {
   }
 
   return (
-    <div className="border-b-[1.5px] w-full h-auto mt-2 shadow-[#495f5d] shadow-lg absolute bg-slate-50 transition-all right-0 border-[#018076]">
+    <div className="border-b-[1.5px] w-full h-auto mt-2 shadow-[#495f5d] shadow-lg absolute bg-slate-50 right-0 border-[#018076]">
               <div className="border-t-2 border-slate-200"></div>
 
       <div className="mx-auto w-[80%] border-[#018076] border-2 p-2 mt-7 rounded-lg text-center">

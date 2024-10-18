@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div>
       {/* Mobile View */}
       <div className="md:hidden  w-90 bg-[#FFFFFF] h-11 mt-8 flex justify-between items-center px-4">
         <div className="h-11">
@@ -34,15 +34,16 @@ const Navbar = () => {
             <Image src={Login} alt="icon" className="" />
           </button>
           <button onClick={toggleMenu} id="menu" className="">
-            {isMenuVisible? <ImCross/>:<Image src={Menu} alt="menu" className="" />}
+            {isMenuVisible? <ImCross style={{scale  :'1.5'}}/>:<Image src={Menu} alt="menu" className="" />}
             {/* <Image src={Menu} alt="menu" className="" /> */}
           </button>
         </div>
       </div>
+      <div id='menu-dropdown' className={`transition-transform delay-75 duration-500 ease-in ${isMenuVisible ? 'translate-x-0':'translate-x-full'}`}>
       {isMenuVisible && <MobileMenu/>}
-
+      </div>
       {/* Web View */}
-      <div className="hidden w-90 bg-[#FFFFFF] h-11 mt-4 md:flex justify-between items-center px-4">
+      <div className="hidden bg-[#FFFFFF] h-11 mt-4 md:flex justify-between items-center px-5">
         <div className="flex items-center">
           <div>
             <Image src={LearnaWeb} alt="icon" className="" />
@@ -50,10 +51,13 @@ const Navbar = () => {
           <div
             className="hidden md:flex mt-1 font-medium text-sm font-raleway mx-4 cursor-pointer"
             onClick={toggleCategories}
+            // onMouseOver={toggleCategories}
           >
             <span className="mr-2">Categories</span>
             <div>
+             { isCategoriesVisible? <Image src={downArrow} alt="downArrow" className="rotate-180 scale-105" />:
               <Image src={downArrow} alt="downArrow" className="" />
+             }
             </div>
           </div>
         </div>
@@ -79,8 +83,11 @@ const Navbar = () => {
       </div>
 
       {/* Categories Dropdown */}
+      <div id='catogeries-dropdown' className={`transition-opacity duration-150 ease-in ${isCategoriesVisible ? 'opacity-100':'opacity-0'}`}>
+
       {isCategoriesVisible && <CategoriesDropdown />}
-    </>
+      </div>
+    </div>
   );
 };
 

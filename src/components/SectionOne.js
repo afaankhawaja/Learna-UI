@@ -28,11 +28,14 @@ const SectionOne = () => {
         </div>
         <div className="w-full lg:w-2/5 flex flex-col items-center lg:items-start mt-8 lg:mt-0">
           <div className="w-full md: max-w-md lg:max-w-lg xl:max-w-xl">
-            <Image 
+            {/* <Image 
               src={Text1} 
               alt="text"
               className="w-full h-auto mb-8 lg:mb-12"
-            />
+            /> */}
+            <p className="w-full h-auto text-black-600 text-[42px] leading-snug">New Ways To <span className="text-[#208077] ">Learn Altogather</span></p>
+            <p className="text-slate-500 text-xl mb-8 lg:mb-12 font-medium mt-3">Get 5000+ Online courses. Learn with Learna!</p>
+
             <div className="flex justify-center lg:justify-start space-x-4 lg:space-x-6">
               <button id="getStarted" className="transform hover:scale-105 transition-transform duration-200">
                 <Image src={getStarted} alt="get Started" className="w-auto h-12 lg:h-14" />
