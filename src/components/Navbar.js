@@ -8,16 +8,21 @@ import downArrow from "../images/downArrow.svg";
 import World from "../images/World.svg";
 import LearnaWeb from "../images/LearnaWeb.svg";
 import CategoriesDropdown from "./CategoriesDropdown";
-import MobileMenu from './MobileMenu'
+import MobileMenu from "./MobileMenu";
 import { ImCross } from "react-icons/im";
-
 
 const Navbar = () => {
   const [isCategoriesVisible, setIsCategoriesVisible] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+
   const toggleCategories = () => {
-    setIsCategoriesVisible(!isCategoriesVisible);
+    if (isCategoriesVisible) {
+      setTimeout(() => setIsCategoriesVisible(false), 200);
+    } else {
+      setIsCategoriesVisible(true);
+    }
   };
+
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
   };
@@ -34,13 +39,22 @@ const Navbar = () => {
             <Image src={Login} alt="icon" className="" />
           </button>
           <button onClick={toggleMenu} id="menu" className="">
-            {isMenuVisible? <ImCross style={{scale  :'1.5'}}/>:<Image src={Menu} alt="menu" className="" />}
+            {isMenuVisible ? (
+              <ImCross style={{ scale: "1.5" }} />
+            ) : (
+              <Image src={Menu} alt="menu" className="" />
+            )}
             {/* <Image src={Menu} alt="menu" className="" /> */}
           </button>
         </div>
       </div>
-      <div id='menu-dropdown' className={`transition-transform delay-75 duration-500 ease-in ${isMenuVisible ? 'translate-x-0':'translate-x-full'}`}>
-      {isMenuVisible && <MobileMenu/>}
+      <div
+        id="menu-dropdown"
+        className={`transition-transform delay-75 duration-500 ease-in ${
+          isMenuVisible ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {isMenuVisible && <MobileMenu />}
       </div>
       {/* Web View */}
       <div className="hidden bg-[#FFFFFF] h-11 mt-4 md:flex justify-between items-center px-5">
@@ -51,20 +65,26 @@ const Navbar = () => {
           <div
             className="hidden md:flex mt-1 font-medium text-sm font-raleway mx-4 cursor-pointer"
             onClick={toggleCategories}
-            // onMouseOver={toggleCategories}
+            onMouseEnter={toggleCategories}
           >
             <span className="mr-2">Categories</span>
             <div>
-             { isCategoriesVisible? <Image src={downArrow} alt="downArrow" className="rotate-180 scale-105" />:
-              <Image src={downArrow} alt="downArrow" className="" />
-             }
+              {isCategoriesVisible ? (
+                <Image
+                  src={downArrow}
+                  alt="downArrow"
+                  className="rotate-180 scale-105"
+                />
+              ) : (
+                <Image src={downArrow} alt="downArrow" className="" />
+              )}
             </div>
           </div>
         </div>
 
         <div className="md:flex justify-evenly gap-4">
           <Image src={World} alt="" />
-          <div className="bg-slate-300 border-2 m-1"></div>
+          <div className="bg-slate-300 border-l-2 m-1"></div>
 
           <div id="Nav-Buttons" className="p-2 space-x-1">
             <span className="border-[#018076] border-2 rounded-lg text-center px-2 py-2.5">
@@ -74,7 +94,7 @@ const Navbar = () => {
               Teach on Learna
             </span>
           </div>
-          <div className="bg-slate-300 border-2 m-1"></div>
+          <div className="bg-slate-300 border-l-2 m-1"></div>
 
           <button id="login">
             <Image src={Login} alt="icon" className="" />
@@ -83,9 +103,14 @@ const Navbar = () => {
       </div>
 
       {/* Categories Dropdown */}
-      <div id='catogeries-dropdown' className={`transition-opacity duration-150 ease-in ${isCategoriesVisible ? 'opacity-100':'opacity-0'}`}>
-
-      {isCategoriesVisible && <CategoriesDropdown />}
+      <div
+        onMouseLeave={toggleCategories}
+        id="dropdown"
+        className={`transition-opacity duration-300 linear ${
+          isCategoriesVisible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        {isCategoriesVisible && <CategoriesDropdown />}
       </div>
     </div>
   );

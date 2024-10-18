@@ -17,21 +17,21 @@ const Benefits = () => {
           <div className="font-normal pt-4 mb-4 text-5xl md:text-7xl">Learner</div>
           <div className="flex items-baseline gap-2 py-2">
             <Image src={Vector} alt="vector" className="" />
-            <p className="font-bold font-raleway ">
+            <p className="font-medium font-raleway ">
               Empowering the pursuing of learning goals to achieve potential
             </p>
           </div>
 
           <div className="flex items-baseline  gap-2 pb-2">
             <Image src={Vector} alt="vector" />
-            <p className="font-bold font-raleway">
+            <p className="font-medium font-raleway">
               Empowering the pursuing of learning goals to achieve potential
             </p>
           </div>
 
           <div className="flex items-baseline  gap-2">
             <Image src={Vector} alt="vector" />
-            <p className="font-bold font-raleway">
+            <p className="font-medium font-raleway">
               Empowering the pursuing of learning goals to achieve potential
             </p>
           </div>
