@@ -54,13 +54,13 @@ const Testimonials = () => {
           src={ScrollButtonL}
           alt="Scroll Left"
           onClick={scrollLeft}
-          className="hidden md:block absolute left-0 ml-1 top-1/2 transform -translate-y-1/2 cursor-pointer"
+          className="hidden hover:pl-1 hover:opacity-75  hover:scale-125 hover:bg-zinc-200 h-[76%] rounded md:block absolute left-1 ml-1 top-1/2 transform -translate-y-1/2 cursor-pointer"
         />
         <Image
           src={ScrollButtonR}
           alt="Scroll Right"
           onClick={scrollRight}
-          className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer"
+          className="hidden hover:pr-1 hover:opacity-75 hover:scale-125 hover:bg-zinc-200 h-[76%] rounded md:block absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer"
         />
       </div>
     </div>
