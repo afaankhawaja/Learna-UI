@@ -3,6 +3,7 @@ import { useState } from 'react';
 import CatogeriesData from './CatogeriesData.json';
 import ScrollButtonR from '../images/ScrollButtonR.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CategoriesDropdown = () => {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -26,11 +27,11 @@ const CategoriesDropdown = () => {
             <div
               key={index}
               onClick={() => handleCategoryClick(category)}
-              className={`p-2  rounded-lg flex justify-between items-center ${
+              className={`p-2  rounded-lg flex font-raleway justify-between items-center ${
                 activeCategory === category ? 'text-[#208077]' : ''
               }`}
             >
-              {category.label} <span className="mx-2">{<Image src={ScrollButtonR} alt=''/>}</span>
+              {category.label} <span className="mx-2">{<Image src={ScrollButtonR} className='mr-2' alt=''/>}</span>
             </div>
           ))}
         </div>
@@ -43,7 +44,7 @@ const CategoriesDropdown = () => {
               <div
                 key={index}
                 onClick={() => handleSubcategoryClick(subcategory)}
-                className={`p-2 rounded-lg flex justify-between items-center ${
+                className={`p-2 rounded-lg font-raleway flex justify-between items-center ${
                   activeSubcategory === subcategory ? 'text-[#208077]' : ''
                 }`}
               >
@@ -56,8 +57,8 @@ const CategoriesDropdown = () => {
         <div>
           {activeSubcategory &&
             activeSubcategory.subsubcatoery.map((subsubcategory, index) => (
-              <div key={index}  className="p-2 rounded-lg hover:text-[#208077]">
-                {subsubcategory.label}
+              <div key={index}  className="p-2 font-raleway pt-4 rounded-lg hover:text-[#208077]">
+               <Link href={`/categories/${subsubcategory.label}`}> {subsubcategory.label} </Link>
               </div>
             ))}
         </div>

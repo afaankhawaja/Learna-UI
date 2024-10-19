@@ -57,7 +57,7 @@ const MobileMenu = () => {
             <div
               key={index}
               onClick={() => handleCategoryClick(category)}
-              className="p-2  rounded-lg flex justify-between items-center text-[#208077] "
+              className="p-2 font-raleway rounded-lg flex justify-between items-center text-[#208077] "
             >
               {category.label}{" "}
               <span className="mx-2">
@@ -69,13 +69,13 @@ const MobileMenu = () => {
         : activeCategory && activeSubcategory== null?
 
        <div>
-         <div className='mx-2 mb-2 px-2 py-1 w-16 text-center rounded-lg bg-black text-white' onClick={handleSubcategoryBack}>back</div>
+         <div className='mx-2 font-raleway mb-2 px-2 py-1 w-16 text-center rounded-lg bg-black text-white' onClick={handleSubcategoryBack}>back</div>
           {activeCategory &&
             activeCategory.subcatogery.map((subcategory, index) => (
               <div
                 key={index}
                 onClick={() => handleSubcategoryClick(subcategory)}
-                className={`p-2 rounded-lg flex justify-between items-center ${
+                className={`p-2 rounded-lg font-raleway flex justify-between items-center ${
                   activeSubcategory === subcategory ? 'text-[#208077]' : ''
                 }`}
               >
@@ -89,7 +89,7 @@ const MobileMenu = () => {
 
           {activeSubcategory &&
             activeSubcategory.subsubcatoery.map((subsubcategory, index) => (
-              <div key={index}  className="p-2 rounded-lg hover:text-[#208077]">
+              <div key={index}  className="p-2 font-raleway rounded-lg hover:text-[#208077]">
                 {subsubcategory.label}
               </div>
             ))}
