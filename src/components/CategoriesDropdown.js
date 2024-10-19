@@ -58,7 +58,7 @@ const CategoriesDropdown = () => {
           {activeSubcategory &&
             activeSubcategory.subsubcatoery.map((subsubcategory, index) => (
               <div key={index}  className="p-2 font-raleway pt-4 rounded-lg hover:text-[#208077]">
-               <Link href={`/categories/${subsubcategory.label}`}> {subsubcategory.label} </Link>
+               <Link href={`/catogeries/${subsubcategory.label.split(' ').join('')}`}> {subsubcategory.label} </Link>
               </div>
             ))}
         </div>

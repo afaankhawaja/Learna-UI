@@ -10,6 +10,7 @@ import LearnaWeb from "../images/LearnaWeb.svg";
 import CategoriesDropdown from "./CategoriesDropdown";
 import MobileMenu from "./MobileMenu";
 import { ImCross } from "react-icons/im";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isCategoriesVisible, setIsCategoriesVisible] = useState(false);
@@ -35,9 +36,9 @@ const Navbar = () => {
           <Image src={GroupLogo} alt="icon" className="" />
         </div>
         <div className="md:hidden w-[141px] h-[40px] gap-[20px] flex items-center">
-          <button id="login">
+          <Link href={'/login'} id="login">
             <Image src={Login} alt="icon" className="" />
-          </button>
+          </Link>
           <button onClick={toggleMenu} id="menu" className="">
             {isMenuVisible ? (
               <ImCross style={{ scale: "1.5" }} />
@@ -96,9 +97,9 @@ const Navbar = () => {
           </div>
           <div className="bg-slate-300 border-l-2 m-1"></div>
 
-          <button id="login">
+          <Link href={'/login'} id="login">
             <Image src={Login} alt="icon" className="" />
-          </button>
+          </Link>
         </div>
       </div>
 
