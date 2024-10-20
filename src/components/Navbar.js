@@ -30,13 +30,15 @@ const Navbar = () => {
 
   return (
     <div>
+      
       {/* Mobile View */}
+
       <div className="md:hidden  w-90 bg-[#FFFFFF] h-11 mt-8 flex justify-between items-center px-4">
         <div className="h-11">
           <Image src={GroupLogo} alt="icon" className="" />
         </div>
         <div className="md:hidden w-[141px] h-[40px] gap-[20px] flex items-center">
-          <Link href={'/login'} id="login">
+          <Link href={"/login"} id="login">
             <Image src={Login} alt="icon" className="" />
           </Link>
           <button onClick={toggleMenu} id="menu" className="">
@@ -45,7 +47,6 @@ const Navbar = () => {
             ) : (
               <Image src={Menu} alt="menu" className="" />
             )}
-            {/* <Image src={Menu} alt="menu" className="" /> */}
           </button>
         </div>
       </div>
@@ -57,7 +58,9 @@ const Navbar = () => {
       >
         {isMenuVisible && <MobileMenu />}
       </div>
+
       {/* Web View */}
+
       <div className="hidden bg-[#FFFFFF] h-11 mt-4 md:flex justify-between items-center px-5">
         <div className="flex items-center">
           <div>
@@ -97,7 +100,7 @@ const Navbar = () => {
           </div>
           <div className="bg-slate-300 border-l-2 m-1"></div>
 
-          <Link href={'/login'} id="login">
+          <Link href={"/login"} id="login">
             <Image src={Login} alt="icon" className="" />
           </Link>
         </div>

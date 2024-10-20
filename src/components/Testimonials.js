@@ -31,13 +31,17 @@ const Testimonials = () => {
       </div>
 
       {/* Image Slider Container */}
+      
       <div className="md:flex md:justify-center md:relative">
+        
         {/* Scrollable Container */}
+
         <div
           ref={scrollContainer}
           className="flex overflow-x-scroll mx-auto space-x-4 scrollbar-hide md:overflow-hidden"
         >
           {/* Image Cards */}
+
           <div className="min-w-[90%] md:min-w-[45%] ml-4 mr-2 my-2 p-5 rounded-lg bg-[#FFFFFF] shadow-[0_2px_20px_0_rgba(0,0,0,0.15)]">
             <Image src={Testimonial1} alt="Testimonial 1" className="w-full h-auto" />
           </div>
@@ -50,6 +54,7 @@ const Testimonials = () => {
         </div>
 
         {/* Scroll Buttons for Desktop */}
+
         <Image
           src={ScrollButtonL}
           alt="Scroll Left"
